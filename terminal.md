@@ -1,12 +1,20 @@
 # Terminal
 
-## Checkout subdirectory
+## `git` reset remote a previous commit
+
+``` bash
+$ git log # and copy the commit hash
+$ git reset --hard <paste commit hash>
+$ git push -f origin master
+```
+
+## `svn` checkout a repository
 
 ``` bash
 $ svn co svn://svn.repository.com/
 ```
 
-## Continously monitor CRON JOB
+## Continously monitor a file
 
 ``` bash
 $ sudo tail -n 100 -f /var/log/syslog | grep CRON
@@ -37,7 +45,7 @@ First launch `crontab -e` on `bash` and add the following to the bottom of the f
 
 Press `Control + X` followed by `Yes` and `Enter` to save.
 
-## Periodically link files physically (by force) using `crontab`
+## Periodically force physical linkage between files using `crontab`
 
 First launch `crontab -e` on `bash` and add the following to the bottom of the file:
 
@@ -56,4 +64,3 @@ $ A && B  # Run B if A succeeded
 $ A || B  # Run B if A failed
 $ A &     # Run A in background.
 ```
-
