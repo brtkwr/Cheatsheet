@@ -1,4 +1,26 @@
-# Python Cheatsheet
+# Python
+
+## Noteworthy Packages
+
+Dealing with data:
+- Feather - fast read/write dataframes
+- Ibis - interact with data in a SQL like environment
+- Paratext - multicore multithreaded CSV read to RAM at 2GB/sec
+- Bcolz - efficiently query tables with a large number of columns
+
+Visualising data:
+- Altair - declarative data visualisation
+- Bokeh - interactive
+- Geoplotlib - visualise on map
+
+Cleaning data
+- Blaze - numpy for big data
+- Xarray - tidy data
+- Dask - parallel computing
+
+Machine learning
+- Keras - Humane deep learning
+- PyMC3 - Markov chain Monte Carlo
 
 ## Vector difference timings
 
@@ -26,5 +48,4 @@ The slowest run took 4.93 times longer than the fastest. This could mean that an
 In [220]: %timeit a=(1,2);b=(3,4);a[0]-b[0],a[1]-b[1]
 The slowest run took 7.47 times longer than the fastest. This could mean that an intermediate result is being cached.
 1000000 loops, best of 3: 309 ns per loop
-
 ```
